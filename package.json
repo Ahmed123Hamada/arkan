@@ -3,11 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "start": "next start",
     "lint": "next lint",
-    "build": "next build && next export ",
-    "deploy": "gh-pages -d out"
+    "build": "next build",
+    "start": "next start",
+    "dev": "next dev"
   },
   "dependencies": {
     "aos": "^2.3.4",

@@ -1,9 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: "export",
-    basePath: "/your-repo-name", // Change this
-    images: {
-        unoptimized: true,
-      },};
+  output: "export", // Enable static export
+};
 
 export default nextConfig;
