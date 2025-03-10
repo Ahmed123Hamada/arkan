@@ -8,13 +8,28 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import first from "../img/first.png";
 import sacand from "../img/sacand.png";
-function Main() {
+import { motion } from "framer-motion";
+import img1 from "../img/img1.png";
+import img2 from "../img/img2.webp";
+import img3 from "../img/img3.webp"; 
+import img4 from "../img/img4.webp";
+
+const items = [
+  { src: img1, alt: "ثوب أزرق" },
+  { src: img2, alt: "ثوب أبيض" },
+  { src: img3, alt: "رجل يرتدي شماغًا وثوبًا أبيض" },
+  { src: img4, alt: "ثوب بني بتطريز ذهبي" },
+];
+ function Main() {
   useEffect(() => {
-    AOS.init({
-      duration: 1000, // مدة الأنيميشن بالمللي ثانية
-      once: false, // اجعل الأنيميشن يحدث مرة واحدة فقط عند التمرير
+    AOS.init({ duration: 1000, easing: "ease-in-out" });
+    AOS.refresh();
+    window.addEventListener("resize", () => {
+      AOS.refresh();
     });
   }, []);
+
+
   return (
     <>
       <div
@@ -190,6 +205,31 @@ function Main() {
           </div>
         </div>
       </section>
+      {/* //////////4 section //////// */}
+      <section className="py-12 bg-gray-100 text-center">
+      <h2 className="text-4xl font-bold text-gray-900">معرض أركان</h2>
+      <p className="text-gray-600 mt-2">استمتع بأناقة الثوب العربي وتراثه الغني في معرضنا.</p>
+      
+      <div className=" container mx-auto flex flex-wrap justify-center   gap-6 mt-8 ">
+        {items.map((item, index) => (
+          <motion.div 
+            key={index} 
+            className="overflow-hidden rounded-2xl shadow-lg cursor-pointer  place-items-center"
+            whileHover={{ scale: 1.05 }}
+          >
+            <div className="  overflow-hidden ">
+            <Image
+onClick={() => openModal(item.src, item.alt)}
+src={item.src}
+alt={item.alt}
+className="w-[300px] h-[60vh] object-cover hover:scale-105 duration-500 ease-in-out"
+/>
+
+            </div>
+          </motion.div>
+        ))}
+      </div>
+    </section>
     </>
   );
 }

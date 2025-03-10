@@ -19,10 +19,7 @@ const linkes = [
     title: "تواصل معنا",
     url: "/contact",
   },
-  {
-    title: "بعض الاعمال",
-    url: "/works",
-  },
+
 ];
 function Navbar() {
     const [open, setOpen] = useState(false);
