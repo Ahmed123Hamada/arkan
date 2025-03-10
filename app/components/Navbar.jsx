@@ -28,7 +28,7 @@ function Navbar() {
       className="w-full h-[10vh] flex justify-center items-start relative "
     >
     <div
-      className="container mx-auto flex justify-between items-center
+      className=" flex justify-between items-center
     max-md:px-4 max-md:py-4 max-sm:px-2 py-2    z-10 
     fixed backdrop-filter backdrop-blur-lg
     "
@@ -67,7 +67,8 @@ function Navbar() {
       {/* ///////button menu  */}
       <button
         onClick={() => setOpen(!open)}
-        className="text-xl text-black hover:text-primary duration-500 hover:scale-110 hover:cursor-pointer *:
+        className="text-xl text-black hover:text-primary duration-500 hover:scale-110 hover:cursor-pointer
+        max-md:ml-36
         md:hidden
         "
       >

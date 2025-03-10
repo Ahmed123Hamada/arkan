@@ -34,7 +34,7 @@ const items = [
     <>
       <div
         lang="ar"
-        className={`m-auto flex justify-start items-start   w-full h-[90vh] bg-home  z-0  `}
+        className={`m-auto flex justify-start items-start   w-full h-[90vh] bg-home  z-0 overflow-hidden `}
       >
         <Image
           src={arkan}
@@ -65,9 +65,9 @@ const items = [
         </div>
       </div>
       {/* ///////2 section ////// */}
-      <div className=" container m-auto flex flex-col md:flex-row h-full  p-6 ">
+      <div className=" container m-auto flex flex-col md:flex-row h-full  p-6 overflow-hidden ">
         {/* Left Section */}
-        <div className="w-full md:w-1/2 p-6 flex flex-col justify-center items-end gap-6">
+        <div className="w-full md:w-1/2 p-6 flex flex-col justify-center items-end gap-6 overflow-hidden">
           {/* Header */}
           <h1
             data-aos="fade-right"
@@ -128,7 +128,7 @@ const items = [
         </div>
       </div>
       {/* ////////3 section ////// */}
-      <section className="bg-primary py-12" dir="rtl">
+      <section className="bg-primary py-12 overflow-hidden" dir="rtl">
         <div className="container mx-auto px-4">
           {/* Header */}
           <h2
@@ -206,7 +206,7 @@ const items = [
         </div>
       </section>
       {/* //////////4 section //////// */}
-      <section className="py-12 bg-gray-100 text-center">
+      <section className="py-12 bg-gray-100 text-center overflow-hidden">
       <h2 className="text-4xl font-bold text-gray-900">معرض أركان</h2>
       <p className="text-gray-600 mt-2">استمتع بأناقة الثوب العربي وتراثه الغني في معرضنا.</p>
       
