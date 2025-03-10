@@ -1,15 +1,15 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import arkan from "../img/home.png";
-import arkanMain from "../img/main.png";
+import arkan from "../img/home.JPEG";
+import arkanMain from "../img/main.JPEG";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import first from "../img/first.png";
-import sacand from "../img/sacand.png";
+import first from "../img/first.JPEG";
+import Imge0 from "../img/new-image.JPEG";
 import { motion } from "framer-motion";
-import img1 from "../img/img1.png";
+import img1 from "../img/img1.JPEG";
 import img2 from "../img/img2.webp";
 import img3 from "../img/img3.webp"; 
 import img4 from "../img/img4.webp";
@@ -182,7 +182,7 @@ const items = [
             <div className="relative w-[40%] max-md:w-full">
               <Image
                 data-aos="fade-right"
-                src={sacand}
+                src={Imge0}
                 alt="Sewing machine representing educational achievements"
                 className=" w-140 h-88 object-cover rounded-lg max-md:w-full"
               />

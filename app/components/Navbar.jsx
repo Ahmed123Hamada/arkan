@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import logo from "../img/logo.png";
+import logo from "../img/logo.JPEG";
 import { first } from "postcss";
 ////icon lucide
 import { Menu } from "lucide-react";
@@ -41,8 +41,7 @@ function Navbar() {
         "
         style={{ fontFamily: "Home" }}
       >
-        {" "}
-        أركان ||{" "}
+        أركان ||
         <Image
           src={logo}
           alt="logo"

@@ -4,12 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build": "next build && next export -out out",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "gh-pages": "^6.3.0",
     "lucide": "^0.479.0",
     "lucide-react": "^0.479.0",
     "motion": "^12.4.10",

@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; 
 import Image from "next/image"; 
-import firstimg from "../img/first.png"
+import firstimg from "../img/first.JPEG"
 import scand from "../img/img2.webp"
 function About() {
   useEffect(() => {
