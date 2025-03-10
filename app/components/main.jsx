@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import arkan from "../img/home.JPEG";
+import arkan from "../img/new-home.JPEG";
 import arkanMain from "../img/main.JPEG";
 import { useEffect } from "react";
 import AOS from "aos";
