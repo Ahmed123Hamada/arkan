@@ -3,7 +3,7 @@ import Image from "next/image";
 import logo from "../img/logo.JPEG";
 import { first } from "postcss";
 ////icon lucide
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
 const linkes = [
@@ -25,12 +25,11 @@ function Navbar() {
     const [open, setOpen] = useState(false);
   return (
     <nav
-      className="w-full h-[10vh] flex justify-center items-start relative "
+      className="w-full h-[10vh] bg-white/20 fixed top-0 left-0 right-0 z-50  backdrop-filter backdrop-blur-md "
     >
     <div
-      className=" flex justify-between items-center
-    max-md:px-4 max-md:py-4 max-sm:px-2 py-2    z-10 
-    fixed backdrop-filter backdrop-blur-lg
+      className=" flex container m-auto justify-between items-center
+    max-md:px-4 max-md:py-4   py-2    z-10 
     "
     >
       <Link
@@ -72,8 +71,7 @@ function Navbar() {
         md:hidden
         "
       >
-        <Menu size={40} />
-      </button>
+{ open ? <X data-aos="fade-down" size={40} />:       <Menu size={40} />}      </button>
     </div>
       {/* ///mobile menu */}
       {open && (
