@@ -62,17 +62,17 @@ function Navbar() {
             {link.title}
           </Link>
         ))}
+        {/* ///////button menu  */}
+        <button
+          onClick={() => setOpen(!open)}
+          className="text-xl text-black hover:text-primary duration-500 hover:scale-110 hover:cursor-pointer
+          max-md:ml-36
+          md:hidden
+          "
+        >
+  { open ? <X data-aos="fade-down" size={40} />:       <Menu size={40} />}      </button>
       </div>
-      {/* ///////button menu  */}
-      <button
-        onClick={() => setOpen(!open)}
-        className="text-xl text-black hover:text-primary duration-500 hover:scale-110 hover:cursor-pointer
-        max-md:ml-36
-        md:hidden
-        "
-      >
-{ open ? <X data-aos="fade-down" size={40} />:       <Menu size={40} />}      </button>
-    </div>
+      </div>
       {/* ///mobile menu */}
       {open && (
         <div data-aos="fade-down" className=" top-[10vh]  left-0 right-0 text-center bg-white  flex flex-col justify-center 
@@ -81,6 +81,8 @@ function Navbar() {
         ">
           {linkes.map((link) => (
             <Link
+            onClick={() => setOpen(false)
+            && window.scrollTo(0, 0)}
             data-aos="fade-down"
               key={link.title}
               href={link.url}

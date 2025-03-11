@@ -8,7 +8,7 @@ const ContactPage = () => {
   }, []);
 
   return (
-    <div className="bg-gray-200 text-white min-h-screen p-8 container mx-auto">
+    <div className="bg-gray-200 text-white min-h-screen p-8 container mx-auto overflow-hidden">
       {/* قسم المعلومات */}
       <div className="bg-gray-100 text-gray-900 rounded-lg p-6 shadow-lg" data-aos="fade-down">
         <h2 className="text-3xl font-bold text-center mb-4">تواصل معنا</h2>
